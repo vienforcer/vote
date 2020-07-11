@@ -1,0 +1,63 @@
+div {
+  cursor: default;
+}
+body {
+  font-family: "微软雅黑";
+  color: #000;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+.appCss {
+  padding: 0px 0px 50px 0px;
+  position: relative;
+
+  .center {
+    position: relative;
+    overflow: auto;
+    display: flex;
+    .right,
+    .left {
+      position: relative;
+      width: 10%;
+    }
+    .body {
+      flex: 1;
+      white-space: nowrap;
+      overflow-y: auto;
+      position: relative;
+      // margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .appCss {
+    position: relative;
+    .center {
+      position: relative;
+      .left {
+        width: 0px;
+      }
+      .right {
+        width: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .appCss {
+    position: relative;
+    .center {
+      position: relative;
+      .left {
+        width: 15%;
+      }
+      .right {
+        width: 15%;
+      }
+    }
+  }
+}

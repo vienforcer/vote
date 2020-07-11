@@ -1,0 +1,33 @@
+.loadingCss {
+  z-index: 99999;
+
+  .box {
+    background: #fff;
+    border-radius: 50%;
+
+    > div {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      pointer-events: none;
+      display: inline-block;
+      vertical-align: middle;
+      color: rgb(208, 147, 243);
+      border: 0.4em dotted currentcolor;
+      animation: loaderBox 0.7s linear infinite;
+      box-shadow: 0px 0px 15px 5px #0ca1e9;
+    }
+
+    @keyframes loaderBox {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

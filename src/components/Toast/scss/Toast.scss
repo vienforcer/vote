@@ -1,0 +1,27 @@
+.toastCss {
+  top: 30%;
+  left: 50%;
+  position: fixed;
+  .msg {
+    color: #fff;
+    max-width: 450px;
+    margin-left: -50%;
+    margin-right: 50%;
+    margin-top: -10px;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: relative;
+    white-space: normal;
+    background: #878787;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px 5px #d5d5d5;
+
+    opacity: 0;
+    transition: all ease-out 200ms;
+
+    &.action {
+      opacity: 1;
+    }
+  }
+}

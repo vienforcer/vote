@@ -1,0 +1,18 @@
+{
+  "apps": [{
+    "name": "node-vote",
+    "script": "index.js",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "out_file": "/mnt/log/node-vote/out.log",
+    "error_file": "/mnt/log/node-vote/err.log",
+    "env": {
+      "PORT": 3050,
+      "NODE_ENV": "production"
+    }
+  }]
+}

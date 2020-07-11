@@ -1,0 +1,33 @@
+.CheckBoxCss {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  .title {
+    margin-left: 5px;
+    white-space: nowrap;
+  }
+  .w {
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(183, 139, 235);
+    .l {
+      border: 1px solid #e4e4e4;
+      width: 8px;
+      height: 8px;
+      margin: 4px;
+      background: rgb(227, 154, 230);
+      border-radius: 50%;
+      box-shadow: 0 0 5px 1px rgb(203, 228, 186);
+      opacity: 0;
+      transition: all ease-out 200;
+    }
+
+    &.selected {
+      .l {
+        opacity: 1;
+      }
+    }
+  }
+}

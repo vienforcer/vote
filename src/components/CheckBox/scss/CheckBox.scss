@@ -1,0 +1,53 @@
+.CheckBoxCss {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+
+  &.left {
+    .title {
+      margin-left: 0px;
+      margin-right: 10px;
+      text-align: right;
+    }
+  }
+
+  &.right {
+    position: relative;
+    flex-direction: row-reverse;
+  }
+
+  .w {
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(183, 139, 235);
+    display: flex;
+    justify-content: center;
+    .l {
+      width: 4px;
+      height: 10px;
+      margin: auto 0px;
+      transform: rotate(45deg);
+      border-right: 3px solid #333;
+      border-bottom: 3px solid #333;
+      opacity: 0;
+      transition: all ease-out 200;
+    }
+
+    &.selected {
+      .l {
+        opacity: 1;
+      }
+    }
+  }
+
+  .title {
+    margin-left: 5px;
+    white-space: nowrap;
+  }
+}

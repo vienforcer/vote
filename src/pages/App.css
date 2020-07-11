@@ -1,0 +1,118 @@
+.row {
+  display: flex;
+  padding: 10px 15px;
+}
+
+
+.col,
+.col0,
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+  padding: 5px;
+}
+
+.col6 {
+  padding: 6px;
+}
+
+.col1,
+.col {
+  flex: 1;
+}
+
+.col0 {
+  flex: unset;
+}
+
+.col2 {
+  flex: 2;
+}
+
+.col3 {
+  flex: 3;
+}
+
+.col4 {
+  flex: 4;
+}
+
+.col5 {
+  flex: 5;
+}
+
+.col6 {
+  flex: 6;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.padding0 {
+  padding: 0px;
+}
+
+.padding-tb-0,
+.padding-bt-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.padding-tb-5,
+.padding-bt-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.padding-left-0 {
+  padding-left: 0px;
+}
+
+.padding-left-5 {
+  padding-left: 5px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.padding-left-15 {
+  padding-left: 15px;
+}
+
+.padding-left-20 {
+  padding-left: 20px;
+}
+
+.padding-right-0 {
+  padding-right: 0px;
+}
+
+.padding-right-5 {
+  padding-right: 5px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+.padding-right-15 {
+  padding-right: 15px;
+}
+
+.padding-right-20 {
+  padding-right: 20px;
+}
+
+.padding-lr-0,
+.padding-rl-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}

@@ -1,0 +1,28 @@
+.fullBoxCss {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  // user-select: none;
+  // -moz-user-select: none;
+  // -khtml-user-select: none;
+
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  .box {
+    padding: 10px;
+  }
+
+  opacity: 0;
+  transition: all ease-out 200ms;
+
+  &.display {
+    opacity: 1;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,59 @@
+.confirmCss {
+  min-width: 280px;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transform: scale(0);
+  transition: all ease-out 200ms;
+
+  .title {
+    border-bottom: 1px solid #eee;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .content {
+    max-height: 200px;
+    min-height: 80px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.78;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .btns {
+    display: flex;
+    position: relative;
+    margin-bottom: -1px;
+
+
+    > div {
+      display: block;
+      flex: 1;
+      > button {
+        flex: 1;
+        height: 40px;
+        width: 100%;
+        border-radius: unset;
+        box-shadow: unset;
+      }
+    }
+
+    .ok {
+      button {
+        color: #fff;
+        background: rgba(51, 103, 214, 1);
+
+        &:active {
+          background: rgba(51, 103, 214, 0.8);
+        }
+      }
+    }
+  }
+
+  &.active{
+    transform: scale(1);
+  }
+}

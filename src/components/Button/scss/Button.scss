@@ -1,0 +1,52 @@
+.buttonCss {
+  display: inline;
+  position: relative;
+  // 禁止内容选中
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+
+  .btn {
+    font-size: 14px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px #056ef4;
+    white-space: nowrap;
+    &:active {
+      background: #f0f0f0;
+    }
+  }
+
+  .s {
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+
+  .m {
+    font-size: 14px;
+  }
+  .l {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+  .xl {
+    font-size: 20px;
+    padding: 5px 25px;
+  }
+
+  .default {
+    position: relative;
+  }
+
+  &.block {
+    display: block;
+    display: flex;
+    .btn {
+      flex: 1;
+
+      
+    }
+  }
+}
