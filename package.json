@@ -1,0 +1,70 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "better-npm-run start-dev",
+    "build": "better-npm-run start-build"
+  },
+  "betterScripts": {
+    "start-dev": {
+      "command": "webpack-dev-server --config=config/webpack.dev.cfg.js --hot --inline --open",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "2106"
+      }
+    },
+    "start-build": {
+      "command": "webpack --progress --config=config/webpack.pro.cfg.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "better-npm-run": "^0.1.1",
+    "bootstrap": "^4.4.1",
+    "braft-editor": "^2.3.8",
+    "bundle-loader": "^0.5.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "commander": "^4.1.1",
+    "copy-webpack-plugin": "^5.0.5",
+    "crypto-js": "^3.1.9-1",
+    "css-loader": "^3.2.1",
+    "ejs-loader": "^0.3.5",
+    "ejs-webpack-loader": "^2.2.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
